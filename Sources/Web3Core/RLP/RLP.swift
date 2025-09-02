@@ -295,10 +295,3 @@ public struct RLP {
         }
     }
 }
-
-fileprivate extension Data {
-
-    var bytes: [UInt8] {
-        return Array(self)
-    }
-}
