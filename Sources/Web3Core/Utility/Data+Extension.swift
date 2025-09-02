@@ -76,7 +76,9 @@ public extension Data {
         uintRepresentation = uintRepresentation >> UInt64(64 - length)
         return uintRepresentation
     }
-    
+}
+
+extension Data {
     var bytes: [UInt8] {
         return Array(self)
     }
