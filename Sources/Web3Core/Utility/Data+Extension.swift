@@ -77,3 +77,9 @@ public extension Data {
         return uintRepresentation
     }
 }
+
+extension Data {
+    var bytes: [UInt8] {
+        return Array(self)
+    }
+}

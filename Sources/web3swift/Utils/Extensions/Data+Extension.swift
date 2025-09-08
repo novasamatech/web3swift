@@ -11,4 +11,8 @@ extension Data {
     func asJsonDictionary() throws -> [String: AnyObject]? {
         try JSONSerialization.jsonObject(with: self, options: .mutableContainers) as? [String:AnyObject]
     }
+    
+    var bytes: [UInt8] {
+        return Array(self)
+    }
 }
