@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Web3swift",
     platforms: [
-        .macOS(.v10_15), .iOS(.v13)
+        .macOS(.v12), .iOS(.v15)
     ],
     products: [
         .library(name: "web3swift", targets: ["web3swift"])
@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.5.1"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.5.1"),
-        .package(name: "secp256k1.c", url: "https://github.com/novasamatech/secp256k1.c.git", .upToNextMinor(from: "0.1.4"))
+        .package(url: "https://github.com/novasamatech/secp256k1.c.git", .upToNextMinor(from: "0.1.4"))
     ],
     targets: [
         .target(
